@@ -13,15 +13,14 @@
       const img = document.getElementById("display-img");
 
         img.src = images[currentIndex];
+        img.alt = "Image";
+    img.style.maxWidth = "300px";
+    img.style.maxHeight = "300px";
 
         currentIndex++;
 
 if (currentIndex >= images.length) {
             currentIndex = 0;
-
-        img.alt = "Image";
-    img.style.maxWidth = "300px";
-    img.style.maxHeight = "300px";
   
         }
     }
